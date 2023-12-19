@@ -1,7 +1,5 @@
 name: Build on DockerHub
 on: push
-DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,8 +19,8 @@ jobs:
           context: ./
           push: true
           tags: moisesgc/webacademy:latest
-deploy:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Fazendo deploy
-      run: echo "Deploy com sucesso!"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fazendo deploy
+        run: echo "Deploy com sucesso!"
