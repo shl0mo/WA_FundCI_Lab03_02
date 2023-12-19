@@ -1,6 +1,5 @@
 name: Build on DockerHub
-on:
-push:
+on: push
 DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
 DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
 jobs:
