@@ -20,7 +20,7 @@ jobs:
           context: ./
           push: true
           dockerfile: ../../
-          tags: shl0mo/WebAcademy:latest
+          tags: shl0mo/webacademy:latest
   deploy:
     runs-on: ubuntu-latest
     steps:
